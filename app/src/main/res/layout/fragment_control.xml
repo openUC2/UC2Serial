@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/colorLightGrey">
+
+        <!-- Axis Controls (A, X, Y, Z) with Large and Small Increments -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axis Control"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryHex" />
+
+        <!-- Axis A Control -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Axis A"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/button_a_minus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="--"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_a_minus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_a_plus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_a_plus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="++"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Axis X"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/button_x_minus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="--"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_x_minus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_x_plus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_x_plus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="++"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Axis Y"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/button_y_minus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="--"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_y_minus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_y_plus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_y_plus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="++"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Axis Z"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/button_z_minus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="--"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_z_minus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_z_plus_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="+"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey"/>
+
+            <Button
+                android:id="@+id/button_z_plus_large"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="++"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/colorLightGrey" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LED Control"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryHex" />
+
+        <!-- LED Slider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="8dp"
+            android:background="@color/colorPrimaryHex">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LED Intensity"
+                android:textSize="14sp"
+                android:textColor="@color/colorSecondaryGreen" />
+
+            <SeekBar
+                android:id="@+id/seekbar_led"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:max="255"
+                android:thumbTint="@color/colorTurquoise"
+                android:progressTint="@color/colorAccent" />
+        </LinearLayout>
+
+        <!-- Laser Controls -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laser Intensity"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorPrimaryHex" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="4dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laser 0"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <SeekBar
+                android:id="@+id/seekbar_laser0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:max="255"
+                android:thumbTint="@color/colorSecondaryGreen"
+                android:progressTint="@color/colorAccent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="4dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laser 1"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <SeekBar
+                android:id="@+id/seekbar_laser1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:max="255"
+                android:thumbTint="@color/colorSecondaryGreen"
+                android:progressTint="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="4dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laser 2"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <SeekBar
+                android:id="@+id/seekbar_laser2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:max="255"
+                android:thumbTint="@color/colorSecondaryGreen"
+                android:progressTint="@color/colorAccent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="4dp"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Laser 3"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent" />
+
+            <SeekBar
+                android:id="@+id/seekbar_laser3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:max="255"
+                android:thumbTint="@color/colorSecondaryGreen"
+                android:progressTint="@color/colorAccent" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

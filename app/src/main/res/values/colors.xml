@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#949C29</color>
+    <color name="colorPrimaryDark">#61671B</color>
+    <color name="colorAccent">#D8E33B</color>
+
+    <!-- Text colors -->
+    <color name="colorReceiveText">#00FF00</color>
+    <color name="colorSendText">#82CAFF</color>
+    <color name="colorStatusText">#FFDB58</color>
+
+    <!-- Additional colors -->
+    <color name="colorPrimaryHex">#023773</color>
+    <color name="colorSecondaryGreen">#85B918</color>
+    <color name="colorTurquoise">#1F9C7C</color>
+    <color name="colorLightGrey">#FAF9F9</color>
+    <color name="colorGrey">#999999</color>
+
+</resources>

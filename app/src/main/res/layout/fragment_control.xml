@@ -293,7 +293,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:max="255"
+                android:max="1023"
                 android:thumbTint="@color/colorSecondaryGreen"
                 android:progressTint="@color/colorAccent" />
         </LinearLayout>
@@ -317,7 +317,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:max="255"
+                android:max="1023"
                 android:thumbTint="@color/colorSecondaryGreen"
                 android:progressTint="@color/colorAccent" />
         </LinearLayout>
@@ -342,7 +342,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:max="255"
+                android:max="1023"
                 android:thumbTint="@color/colorSecondaryGreen"
                 android:progressTint="@color/colorAccent" />
         </LinearLayout>

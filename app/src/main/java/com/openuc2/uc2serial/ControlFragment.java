@@ -476,6 +476,7 @@ public class ControlFragment extends Fragment implements SerialInputOutputManage
 
             // Convert the JSON object to a string for sending
             jsonString = jsonDict.toString();
+            Log.d("TEST", "JSON: " + jsonString);
 
 
         } catch (JSONException e) {
@@ -489,11 +490,12 @@ public class ControlFragment extends Fragment implements SerialInputOutputManage
         String jsonString = "{}";
         try {
             //  {"task": "/laser_act", "LASERid":1, "LASERval": 1024}
+            //   {"task": "/laser_act", "LASERid":1, "LASERval": 1024}
             JSONObject jsonDict = new JSONObject();
             // Add the task key-value pair to the JSON object
             jsonDict.put("task", "/laser_act");
-            jsonDict.put("LASERid", String.valueOf(laserId));
-            jsonDict.put("LASERval", String.valueOf(intensity));
+            jsonDict.put("LASERid", laserId);
+            jsonDict.put("LASERval", intensity);
             // Convert the JSON object to a string for sending
             jsonString = jsonDict.toString();
             Log.d("TEST", "JSON: " + jsonString);
